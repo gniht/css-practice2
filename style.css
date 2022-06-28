@@ -43,14 +43,21 @@ li {
 }
 
 .sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   grid-column: 1/2;
   grid-row: 2/4;
   background-color: #FF7755;
 }
 
 .sidebar .photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: white;
   color: black;
+  flex: 1 1 50px;  
   font-size: 12px;
   font-weight: normal;
   border-radius: 10px;
@@ -58,8 +65,13 @@ li {
 
 
 .sidebar .side-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;    
   background-color: white;
   color: black;
+  margin-top: 20px;
+  flex: 1 1 50px;  
   font-size: 16px;
   font-weight: normal;
 }
@@ -80,6 +92,9 @@ li {
 }
 
 .article {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
   background-color: #bccbde;
 }
 
